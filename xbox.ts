@@ -1,6 +1,6 @@
 import * as HAS from 'has-node';
 
-const consoleIpAdderess = '<INSERT IPADDRESS HERE. Ex.: 192.168.0.5>';
+const consoleIpAddress = '<INSERT IPADDRESS HERE. Ex.: 192.168.0.5>';
 const consoleLiveId = '<INSERT LIVE ID HERE> Ex.: FD0############';
 
 let config = new HAS.Config(
@@ -32,7 +32,7 @@ let on = HAS.predefined.On(1, false, (value, callback) => {
 
     if (value) {
         var XboxOn = require('xbox-on');
-        var xboxOn = new XboxOn(consoleIpAdderess, consoleLiveId);
+        var xboxOn = new XboxOn(consoleIpAddress, consoleLiveId);
 
         var options = {
             tries: 5,
